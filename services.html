@@ -1,0 +1,300 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f27f0d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221910",
+                        "navy-custom": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <title>Flexon Services &amp; Stories | Flexon Sports Academy</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark px-10 py-4 sticky top-0 z-50">
+                <div class="flex items-center gap-3 text-navy-custom dark:text-primary">
+                    <div class="bg-primary p-1.5 rounded-lg flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-2xl">sports_score</span>
+                    </div>
+                    <h2 class="text-xl font-bold tracking-tighter uppercase italic">Flexon<span
+                            class="text-primary not-italic">Sports Academy</span></h2>
+                </div>
+                <div class="flex items-center gap-8">
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="home.html">Home</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="services.html">Services</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="achivements.html">Achievements</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="flexonlegecy.html">Legacy</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="donation.html">Support</a>
+                    </nav>
+                    <a href="payment.html"
+                        class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all uppercase tracking-wide">
+                        Join the Mission
+                    </a>
+                </div>
+            </header>
+            <main class="mx-auto max-w-[1200px] w-full px-6 py-12">
+                <section class="mb-20">
+                    <div class="flex flex-col mb-10">
+                        <span class="text-primary font-bold text-sm tracking-widest uppercase mb-2">Our Offerings</span>
+                        <h2 class="text-navy-custom dark:text-slate-100 text-4xl font-bold tracking-tight mb-4">Academy
+                            Core Services</h2>
+                        <div class="h-1.5 w-24 bg-primary rounded-full"></div>
+                        <p class="mt-6 text-slate-600 dark:text-slate-400 max-w-2xl text-lg">
+                            FLEXON SPORTS ACADEMY is dedicated to revolutionizing rural sports through professional
+                            pathways and community-driven excellence.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div
+                            class="group flex flex-col justify-between rounded-2xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 transition-all hover:border-primary/30 hover:shadow-2xl hover:-translate-y-2">
+                            <div>
+                                <div
+                                    class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-3xl">trophy</span>
+                                </div>
+                                <h3 class="text-navy-custom dark:text-slate-100 text-xl font-bold mb-3">Rural Sports
+                                    Meets</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">Organizing
+                                    high-stakes regional tournaments that serve as a launchpad for untapped village
+                                    talent.</p>
+                            </div>
+                            <div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+                                <p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Grassroots
+                                    Competition</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex flex-col justify-between rounded-2xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 transition-all hover:border-primary/30 hover:shadow-2xl hover:-translate-y-2">
+                            <div>
+                                <div
+                                    class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-3xl">shield</span>
+                                </div>
+                                <h3 class="text-navy-custom dark:text-slate-100 text-xl font-bold mb-3">Talent Shield
+                                </h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">FLEXON's
+                                    flagship scholarship program providing nutrition, gear, and security for rising
+                                    stars.</p>
+                            </div>
+                            <div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+                                <p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Athlete
+                                    Protection</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex flex-col justify-between rounded-2xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 transition-all hover:border-primary/30 hover:shadow-2xl hover:-translate-y-2">
+                            <div>
+                                <div
+                                    class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-3xl">stadium</span>
+                                </div>
+                                <h3 class="text-navy-custom dark:text-slate-100 text-xl font-bold mb-3">Sustainable
+                                    Infrastructure</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">Building
+                                    eco-conscious, professional-grade arenas in the heart of rural India.</p>
+                            </div>
+                            <div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+                                <p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Community
+                                    Legacy</p>
+                            </div>
+                        </div>
+                        <div
+                            class="group flex flex-col justify-between rounded-2xl border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 transition-all hover:border-primary/30 hover:shadow-2xl hover:-translate-y-2">
+                            <div>
+                                <div
+                                    class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <span class="material-symbols-outlined text-3xl">sports</span>
+                                </div>
+                                <h3 class="text-navy-custom dark:text-slate-100 text-xl font-bold mb-3">Professional
+                                    Coaching</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">Connecting
+                                    world-class mentors with athletes through FLEXON's specialized rural training camps.
+                                </p>
+                            </div>
+                            <div class="pt-4 border-t border-slate-100 dark:border-slate-800">
+                                <p class="text-primary text-[10px] font-black uppercase tracking-[0.2em]">Expert
+                                    Guidance</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="flex flex-col mb-10">
+                        <span class="text-primary font-bold text-sm tracking-widest uppercase mb-2">Our Impact</span>
+                        <h2 class="text-navy-custom dark:text-slate-100 text-4xl font-bold tracking-tight mb-4">Success
+                            Stories</h2>
+                        <div class="h-1.5 w-24 bg-primary rounded-full"></div>
+                    </div>
+                    <div
+                        class="relative overflow-hidden rounded-3xl bg-white dark:bg-slate-900 border-2 border-slate-100 dark:border-slate-800 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)]">
+                        <div class="flex flex-col lg:flex-row">
+                            <div class="relative h-96 lg:h-auto lg:w-2/5 overflow-hidden">
+                                <img alt="Akash from Vidarbha"
+                                    class="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                    data-alt="Young Indian athlete in sports gear posing confidently"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7AhimXSITJ7ho609aswaxsE7VZhaPujR3DxHvqptNpwoHB_eAdHfs_ifOOO6BKty35LFk_WgZFeUZ4dtwiVWkI0PNufBkXNTdOnAOrn-hEn3WOQmU0u6_UG69m9rZHwacps-W94rTqykh00z5D-xE-X9_YqpboKwSHCJOh_p9kZbbWnos9tg_gTwK7NcTfnN9eqcJ9YyhtIlo7WRLGUYGs_F85iQlmx1bfGpBzgBGNZqt_T5jOVaVwHJRR8-zUT3xDQUwD6GApcqW" />
+                                <div class="absolute inset-0 bg-navy-custom/20"></div>
+                            </div>
+                            <div class="flex flex-col justify-center p-8 lg:p-20 lg:w-3/5">
+                                <div
+                                    class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-xs font-black text-primary mb-8 tracking-widest uppercase">
+                                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                                    FLEXON FEATURED ATHLETE
+                                </div>
+                                <h3
+                                    class="text-navy-custom dark:text-slate-100 text-4xl lg:text-5xl font-bold mb-8 italic leading-[1.1] font-display">
+                                    "Flexon Sports Academy didn't just give me a track; they gave me a dream and the
+                                    wings to fly."
+                                </h3>
+                                <div class="mb-10 flex items-center gap-4">
+                                    <div class="h-1 w-12 bg-primary"></div>
+                                    <div>
+                                        <p class="text-2xl font-bold text-navy-custom dark:text-primary">Akash Mehra</p>
+                                        <p class="text-slate-500 dark:text-slate-400 font-medium">Sprinter, Vidarbha
+                                            District • Talent Shield Scholar</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-xl mb-10 italic">
+                                    From running barefoot on dusty village roads to representing the state in national
+                                    championships, Akash's journey embodies the spirit of our mission. Through the <span
+                                        class="text-navy-custom dark:text-slate-200 font-bold">FLEXON Talent
+                                        Shield</span> program, he received professional gear, nutrition support, and
+                                    specialized sprinting drills.
+                                </p>
+                                <div class="flex items-center gap-4">
+                                    <button
+                                        class="flex items-center gap-3 bg-navy-custom text-white px-8 py-4 rounded-xl font-bold hover:bg-primary transition-all group">
+                                        Read Full Journey
+                                        <span
+                                            class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-24 rounded-[32px] bg-navy-custom p-16 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-32 -mt-32">
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -ml-32 -mb-32">
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Be Part of the FLEXON Transformation</h2>
+                    <p class="text-slate-300 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
+                        Join Flexon Sports Academy in reaching the next generation of champions. Your support provides
+                        the tools rural athletes need to win on the world stage.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6 relative z-10">
+                        <button
+                            class="bg-primary text-white font-black py-4 px-10 rounded-xl hover:scale-105 transition-all shadow-xl shadow-primary/20 uppercase tracking-widest text-sm">Support
+                            an Athlete</button>
+                        <button
+                            class="border-2 border-slate-700 text-white font-black py-4 px-10 rounded-xl hover:bg-white hover:text-navy-custom transition-all uppercase tracking-widest text-sm">Become
+                            a Partner</button>
+                    </div>
+                </section>
+            </main>
+            <footer
+                class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-16 px-10 mt-12">
+                <div class="mx-auto max-w-[1200px]">
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+                        <div class="max-w-xs">
+                            <div class="flex items-center gap-3 text-navy-custom dark:text-primary mb-6">
+                                <div class="bg-navy-custom dark:bg-primary p-1.5 rounded-lg">
+                                    <span class="material-symbols-outlined text-white text-2xl">sports_score</span>
+                                </div>
+                                <span class="font-black text-2xl uppercase italic tracking-tighter">Flexon <span
+                                        class="text-primary not-italic">Sports Academy</span></span>
+                            </div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                                Empowering rural Indian athletes through world-class training, infrastructure, and
+                                financial support.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+                            <div class="flex flex-col gap-4">
+                                <h4
+                                    class="font-bold text-navy-custom dark:text-slate-100 uppercase tracking-widest text-xs">
+                                    Programs</h4>
+                                <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Rural
+                                    Meets</a>
+                                <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Talent
+                                    Shield</a>
+                                <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Academy
+                                    Camps</a>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h4
+                                    class="font-bold text-navy-custom dark:text-slate-100 uppercase tracking-widest text-xs">
+                                    Foundation</h4>
+                                <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Our
+                                    Mission</a>
+                                <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Annual
+                                    Report</a>
+                                <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Join
+                                    Us</a>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h4
+                                    class="font-bold text-navy-custom dark:text-slate-100 uppercase tracking-widest text-xs">
+                                    Contact</h4>
+                                <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Mumbai
+                                    HQ</a>
+                                <a class="text-sm text-slate-500 hover:text-primary transition-colors" href="#">Regional
+                                    Hubs</a>
+                                <a class="text-sm text-slate-500 hover:text-primary transition-colors"
+                                    href="#">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+                        <p class="text-sm text-slate-400 font-medium">© 2024 FLEXON SPORTS ACADEMY. MISSION: EMPOWERING
+                            GRASSROOTS CHAMPIONS.</p>
+                        <div class="flex gap-6 text-sm text-slate-500 font-bold uppercase tracking-widest">
+                            <a class="hover:text-primary transition-colors" href="#">Privacy</a>
+                            <a class="hover:text-primary transition-colors" href="#">Terms</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
