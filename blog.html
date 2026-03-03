@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ef4444", // Action Red
+                        "secondary": "#1a2b4b", // Trust Navy
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <title>The Field Report | Flexon Sports Foundation</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-4 md:px-8 lg:px-12 xl:px-20 py-4 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md sticky top-0 z-50">
+                <div class="flex items-center gap-4 xl:gap-8">
+                    <div class="flex items-center gap-2 xl:gap-3">
+                        <div class="text-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-3xl xl:text-4xl font-bold">bolt</span>
+                        </div>
+                        <h2
+                            class="text-navy-custom dark:text-white text-base xl:text-xl font-black uppercase tracking-tighter">
+                            FLEXON SPORTS FOUNDATION</h2>
+                    </div>
+                    <nav class="hidden lg:flex items-center gap-4 xl:gap-6">
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="home.html">Home</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="flexonlegecy.html">About Us</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="services.html">Services</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="achivements.html">Achievements</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="events.html">Events</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="blog.html">Blog</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="donation.html">Support</a>
+                    </nav>
+                </div>
+                <div class="flex flex-1 justify-end gap-3 xl:gap-6 items-center">
+                    <a href="donation.html"
+                        class="hidden md:flex min-w-[120px] xl:min-w-[140px] cursor-pointer items-center justify-center rounded-full h-10 px-4 xl:px-6 bg-primary text-white text-[10px] xl:text-xs font-black uppercase tracking-widest shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">Donate
+                        Now</a>
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 xl:size-10 border-2 border-primary/20"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNtL4op4hry3FDm44ZNRDU7SzzR79ScZhmYMtY9JcRSzc5gCx7rL5DoFcCmsMr9f-5-65JBAXOR3_DFEoZ5Y_j--dUegMaJfGZHtmHuhy9oF3REm7t10NJ4f0QyCSGnhhRC6kDwJg1a8OyNiWJ7idObZFkiXt0bIFcRxKhqKwIqbS48lYOeGAibP1OL6iAk4hlxJ8VDnwj-oRQLUV-AJQcBYeemdk8ho_56iaqRLhnWREp77AHcR58e_kc4zWohDhHd7cQOZv3w-eM");'>
+                    </div>
+                </div>
+            </header>
+
+            <main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-12">
+                <!-- Hero Section -->
+                <section class="mb-20 text-center flex flex-col items-center">
+                    <div class="flex items-center gap-2 text-primary mb-4 bg-primary/10 px-4 py-1.5 rounded-full">
+                        <span class="material-symbols-outlined text-xl">newspaper</span>
+                        <span class="text-xs font-black uppercase tracking-widest">Stories of Change</span>
+                    </div>
+                    <h1
+                        class="text-secondary dark:text-white text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6">
+                        The Field Report
+                    </h1>
+                    <div class="h-1.5 w-32 bg-primary rounded-full mb-8"></div>
+                    <p class="text-slate-600 dark:text-slate-300 text-xl md:text-2xl max-w-4xl leading-relaxed mb-10">
+                        Dispatches from the frontlines of rural sports development. Real stories, quantifiable impact,
+                        and the voices of our athletes.
+                    </p>
+                    <div
+                        class="bg-secondary text-white p-6 rounded-2xl border-l-4 border-l-primary shadow-xl inline-block max-w-2xl">
+                        <p class="font-serif italic text-lg lg:text-xl font-bold opacity-90">
+                            "Impact is not just a metric; it is a story waiting to be told."
+                        </p>
+                    </div>
+                </section>
+
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+                    <!-- Main Blog Content -->
+                    <div class="lg:col-span-3">
+                        <div
+                            class="flex items-center justify-between mb-10 border-b border-slate-200 dark:border-slate-800 pb-4">
+                            <h2 class="text-3xl font-bold uppercase tracking-widest text-secondary dark:text-white">
+                                Latest Dispatches</h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                            <!-- Post 1 -->
+                            <article
+                                class="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 group hover:-translate-y-2 transition-all cursor-pointer">
+                                <div class="h-64 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7AhimXSITJ7ho609aswaxsE7VZhaPujR3DxHvqptNpwoHB_eAdHfs_ifOOO6BKty35LFk_WgZFeUZ4dtwiVWkI0PNufBkXNTdOnAOrn-hEn3WOQmU0u6_UG69m9rZHwacps-W94rTqykh00z5D-xE-X9_YqpboKwSHCJOh_p9kZbbWnos9tg_gTwK7NcTfnN9eqcJ9YyhtIlo7WRLGUYGs_F85iQlmx1bfGpBzgBGNZqt_T5jOVaVwHJRR8-zUT3xDQUwD6GApcqW');">
+                                    </div>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent">
+                                    </div>
+                                    <span
+                                        class="absolute top-4 left-4 bg-primary text-white text-xs font-black uppercase tracking-widest px-3 py-1.5 rounded-full">Athlete
+                                        Diaries</span>
+                                </div>
+                                <div class="p-8">
+                                    <div
+                                        class="flex items-center gap-4 text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
+                                        <span>March 15, 2026</span>
+                                        <span class="w-1 h-1 bg-slate-400 rounded-full"></span>
+                                        <span>4 Min Read</span>
+                                    </div>
+                                    <h3
+                                        class="text-2xl font-bold text-secondary dark:text-white mb-4 leading-tight group-hover:text-primary transition-colors">
+                                        The 400m Dash That Changed a Village: Akash's Story</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
+                                        Witness the firsthand account of a young sprinter from Vidarbha who traded muddy
+                                        trails for a professional synthetic track, supported by the Talent Shield grant.
+                                    </p>
+                                    <div
+                                        class="flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm">
+                                        <span>Read Full Story</span>
+                                        <span
+                                            class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Post 2 -->
+                            <article
+                                class="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 group hover:-translate-y-2 transition-all cursor-pointer">
+                                <div class="h-64 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBULFq7x3IVfJtsflLQP3no2ku4lAUWbvf3ZDkj1iUTmP-S20xDpe64LgQy3iSJqcbYo1VhPf1Z07AQi6H5EjJP6NwU5ke4QHRMBjeu-B49UbYOcWRx6ZchaRPzMEeRV7Fu_teg1DsnhTj9UEfg5gb8-H6fJYywWzRLU9SsbCifF6QpX5FlfLN8grco7uwsokReaVAevpHdxdGtnJKagfIi3RdG0fjPPTAOYTLLuUfTq9gUOxTe00GJaQ58YyC2EhZ5egHYTyPWxcxx');">
+                                    </div>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent">
+                                    </div>
+                                    <span
+                                        class="absolute top-4 left-4 bg-primary text-white text-xs font-black uppercase tracking-widest px-3 py-1.5 rounded-full">Impact
+                                        Studies</span>
+                                </div>
+                                <div class="p-8">
+                                    <div
+                                        class="flex items-center gap-4 text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
+                                        <span>February 28, 2026</span>
+                                        <span class="w-1 h-1 bg-slate-400 rounded-full"></span>
+                                        <span>6 Min Read</span>
+                                    </div>
+                                    <h3
+                                        class="text-2xl font-bold text-secondary dark:text-white mb-4 leading-tight group-hover:text-primary transition-colors">
+                                        From Dust to Turf: Unveiling the New Ground in Solapur</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
+                                        A deep dive into the socioeconomic impact of providing professional-grade
+                                        infrastructure to a village that had never seen a properly leveled pitch.
+                                    </p>
+                                    <div
+                                        class="flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm">
+                                        <span>Read Full Report</span>
+                                        <span
+                                            class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Post 3 -->
+                            <article
+                                class="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 group hover:-translate-y-2 transition-all cursor-pointer">
+                                <div class="h-64 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB24-7xzgsUKt0_4yfUKNglpcU9Ar4g4GUn0in5wWSdv4JjHKoE-zATAPIJfZ1Vrgl50ERmpD0k8dkaRKaq52wBoNisONzqxGKTrO3h5OiPDeRYuMlbUt1AxWoAJ2__nk6M5-KR8Ngy3t6vkNT4a7ThIR0TXOwh7rZQG-TEOvlDuIz3bIMr5XVnWW9BBaI_5R7zEl4Ob3jGeHAeCG1zDkRiIzvPSHeE_GK72lk-cVSrRx0sCrvfPC0Lr4DYF3iE5JhivMzzAFSGs0n3');">
+                                    </div>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent">
+                                    </div>
+                                    <span
+                                        class="absolute top-4 left-4 bg-primary text-white text-xs font-black uppercase tracking-widest px-3 py-1.5 rounded-full">Coaching
+                                        the Coaches</span>
+                                </div>
+                                <div class="p-8">
+                                    <div
+                                        class="flex items-center gap-4 text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
+                                        <span>February 10, 2026</span>
+                                        <span class="w-1 h-1 bg-slate-400 rounded-full"></span>
+                                        <span>5 Min Read</span>
+                                    </div>
+                                    <h3
+                                        class="text-2xl font-bold text-secondary dark:text-white mb-4 leading-tight group-hover:text-primary transition-colors">
+                                        Why Nutrition is the Unsung Hero of Grassroots Sports</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6 font-medium">
+                                        Our lead sports scientist explains how addressing dietary gaps at the
+                                        foundational level improves injury rates and unlocks explosive acceleration in
+                                        growing youth.
+                                    </p>
+                                    <div
+                                        class="flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm">
+                                        <span>Read Full Guide</span>
+                                        <span
+                                            class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="lg:col-span-1">
+                        <div class="sticky top-28 space-y-8">
+                            <!-- Categories -->
+                            <div
+                                class="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-100 dark:border-slate-800 shadow-lg">
+                                <h3
+                                    class="text-xl font-bold uppercase tracking-widest text-secondary dark:text-white mb-6">
+                                    Categories</h3>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a href="#" class="flex justify-between items-center group">
+                                            <span
+                                                class="font-bold text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">Athlete
+                                                Diaries</span>
+                                            <span
+                                                class="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded-lg">12</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex justify-between items-center group">
+                                            <span
+                                                class="font-bold text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">Impact
+                                                Studies</span>
+                                            <span
+                                                class="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded-lg">8</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex justify-between items-center group">
+                                            <span
+                                                class="font-bold text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">Coaching
+                                                the Coaches</span>
+                                            <span
+                                                class="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded-lg">15</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Impact Ticker CTA -->
+                            <div
+                                class="bg-secondary rounded-3xl p-8 shadow-2xl relative overflow-hidden border-2 border-primary/20">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-[50px] rounded-full">
+                                </div>
+                                <div class="relative z-10 text-center">
+                                    <span class="material-symbols-outlined text-primary text-5xl mb-4">public</span>
+                                    <h3 class="text-white text-2xl font-black uppercase tracking-tight mb-8">Movements
+                                        Echo</h3>
+
+                                    <div class="space-y-6">
+                                        <div>
+                                            <p class="text-primary text-3xl font-black">10K+</p>
+                                            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">
+                                                Articles Read</p>
+                                        </div>
+                                        <div class="h-px w-16 bg-white/20 mx-auto"></div>
+                                        <div>
+                                            <p class="text-primary text-3xl font-black">5K+</p>
+                                            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">
+                                                Stories Shared</p>
+                                        </div>
+                                    </div>
+
+                                    <a href="#"
+                                        class="mt-8 block bg-primary text-white text-xs font-black uppercase tracking-widest py-3 px-6 rounded-lg hover:bg-white hover:text-secondary transition-all">
+                                        Subscribe to Impact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer
+                class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 px-10 py-10 mt-auto">
+                <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-2 opacity-60">
+                        <span class="material-symbols-outlined text-primary">sports_kabaddi</span>
+                        <span class="text-sm font-bold uppercase tracking-tighter">Flexon Sports Foundation ©
+                            2026</span>
+                    </div>
+                    <div
+                        class="flex flex-wrap justify-center gap-8 text-sm font-bold uppercase tracking-widest text-slate-500">
+                        <a class="hover:text-primary transition-colors" href="home.html">Home</a>
+                        <a class="hover:text-primary transition-colors" href="events.html">Events</a>
+                        <a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
+                        <a class="hover:text-primary transition-colors" href="donation.html">Support</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

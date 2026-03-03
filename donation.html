@@ -4,10 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Donation &amp; Investment Tiers | FLEXON SPORTS ACADEMY</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
@@ -17,323 +15,276 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#f27f0d",
+                        "primary": "#ef4444", // Action Red
+                        "secondary": "#1a2b4b", // Trust Navy
                         "background-light": "#f8f7f5",
                         "background-dark": "#221910",
                     },
                     fontFamily: {
-                        "display": ["Lexend"]
+                        "display": ["Lexend", "sans-serif"]
                     },
                     borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
-    <style>
-        body {
-            font-family: 'Lexend', sans-serif;
-        }
-
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
+    <title>Fund a Future | Flexon Sports Foundation</title>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
-    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <div class="layout-container flex h-full grow flex-col">
             <header
-                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 lg:px-20 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
-                <div class="flex items-center gap-3 text-slate-900 dark:text-slate-100">
-                    <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
-                        <span class="material-symbols-outlined">bolt</span>
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-4 md:px-8 lg:px-12 xl:px-20 py-4 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md sticky top-0 z-50">
+                <div class="flex items-center gap-4 xl:gap-8">
+                    <div class="flex items-center gap-2 xl:gap-3">
+                        <div class="text-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-3xl xl:text-4xl font-bold">bolt</span>
+                        </div>
+                        <h2
+                            class="text-navy-custom dark:text-white text-base xl:text-xl font-black uppercase tracking-tighter">
+                            FLEXON SPORTS FOUNDATION</h2>
                     </div>
-                    <h2 class="text-lg font-bold leading-tight tracking-tight uppercase">Flexon Sports Academy</h2>
-                </div>
-                <div class="flex flex-1 justify-end gap-8 items-center">
-                    <nav class="hidden md:flex items-center gap-8">
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    <nav class="hidden lg:flex items-center gap-4 xl:gap-6">
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             href="home.html">Home</a>
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="flexonlegecy.html">About Us</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             href="services.html">Services</a>
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             href="achivements.html">Achievements</a>
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
-                            href="flexonlegecy.html">Legacy</a>
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="events.html">Events</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="blog.html">Blog</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             href="donation.html">Support</a>
                     </nav>
-                    <div class="flex items-center gap-4">
-                        <a href="payment.html"
-                            class="hidden sm:flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-all">
-                            Donate Now
-                        </a>
-                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20"
-                            data-alt="User profile placeholder"
-                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuACNexQhHWJNVRjoxhnpnp1scLKlAGl_bK_eG74qZt-6Kp2p0aTO08HPSHGpNslVRo4O5qrj3z2EI0SLxb-S1peWjO723P41WbQ0Dq6p1i0deM39eNk9TZqKXgMLL1FMmJ4PlikwbayLH9GM7rz7TNN18rSgDxdPm-IIh80mGOsp1_WC0nmyfQqrN4mUyMbUqVk8jZyrQHCuvQ1fq3aPYC4gWhrtERkD1XjZB-8Ch1HxTmUjc1qBwxJ_dUIjjGNZhGNC2z-88H0McjN");'>
-                        </div>
+                </div>
+                <div class="flex flex-1 justify-end gap-3 xl:gap-6 items-center">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 xl:size-10 border-2 border-primary/20"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNtL4op4hry3FDm44ZNRDU7SzzR79ScZhmYMtY9JcRSzc5gCx7rL5DoFcCmsMr9f-5-65JBAXOR3_DFEoZ5Y_j--dUegMaJfGZHtmHuhy9oF3REm7t10NJ4f0QyCSGnhhRC6kDwJg1a8OyNiWJ7idObZFkiXt0bIFcRxKhqKwIqbS48lYOeGAibP1OL6iAk4hlxJ8VDnwj-oRQLUV-AJQcBYeemdk8ho_56iaqRLhnWREp77AHcR58e_kc4zWohDhHd7cQOZv3w-eM");'>
                     </div>
                 </div>
             </header>
-            <main class="px-6 lg:px-20 py-10">
-                <div class="max-w-[1280px] mx-auto">
-                    <div class="flex flex-col lg:flex-row gap-12">
-                        <div class="flex-1">
-                            <div class="mb-10">
-                                <h1
-                                    class="text-slate-900 dark:text-slate-100 text-4xl lg:text-5xl font-black leading-tight tracking-tight mb-4">
-                                    Invest in India’s <br /><span class="text-primary">Untapped Excellence</span>
-                                </h1>
-                                <p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
-                                    Support Flexon Sports Academy's mission to provide the infrastructure, world-class
-                                    coaching, and essential resources for rural talent to represent India globally.
-                                </p>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div
-                                    class="flex flex-col gap-6 rounded-xl border border-primary/10 bg-white dark:bg-slate-800/50 p-8 shadow-sm hover:shadow-md transition-shadow group">
-                                    <div class="flex flex-col gap-2">
-                                        <div
-                                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-2">
-                                            <span class="material-symbols-outlined text-3xl">sports_cricket</span>
-                                        </div>
-                                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Athlete’s Kit
-                                        </h3>
-                                        <div class="flex items-baseline gap-1 text-slate-900 dark:text-slate-100">
-                                            <span class="text-3xl font-black">₹5,000</span>
-                                            <span class="text-slate-500 text-sm font-medium">one-time</span>
-                                        </div>
-                                        <p class="text-xs text-slate-500">Essential Flexon Academy starter gear</p>
-                                    </div>
-                                    <a href="payment.html"
-                                        class="w-full flex cursor-pointer items-center justify-center rounded-lg h-12 px-4 bg-primary text-white text-sm font-bold tracking-wide group-hover:scale-[1.02] transition-transform">
-                                        Fund this Future
-                                    </a>
-                                    <ul class="flex flex-col gap-3">
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Professional grade gear
-                                        </li>
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            High-performance apparel
-                                        </li>
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Safety equipment
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div
-                                    class="flex flex-col gap-6 rounded-xl border border-primary/10 bg-white dark:bg-slate-800/50 p-8 shadow-sm hover:shadow-md transition-shadow group">
-                                    <div class="flex flex-col gap-2">
-                                        <div
-                                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-2">
-                                            <span class="material-symbols-outlined text-3xl">school</span>
-                                        </div>
-                                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Talent
-                                            Scholarship</h3>
-                                        <div class="flex items-baseline gap-1 text-slate-900 dark:text-slate-100">
-                                            <span class="text-3xl font-black">₹25,000</span>
-                                            <span class="text-slate-500 text-sm font-medium">one-time</span>
-                                        </div>
-                                        <p class="text-xs text-slate-500">Sponsored residency at Flexon Academy</p>
-                                    </div>
-                                    <a href="payment.html"
-                                        class="w-full flex cursor-pointer items-center justify-center rounded-lg h-12 px-4 bg-primary text-white text-sm font-bold tracking-wide group-hover:scale-[1.02] transition-transform">
-                                        Fund this Future
-                                    </a>
-                                    <ul class="flex flex-col gap-3">
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Full-year Flexon coaching
-                                        </li>
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Customized nutrition plans
-                                        </li>
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Competition travel costs
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div
-                                    class="flex flex-col gap-6 rounded-xl border border-primary/10 bg-white dark:bg-slate-800/50 p-8 shadow-sm hover:shadow-md transition-shadow group">
-                                    <div class="flex flex-col gap-2">
-                                        <div
-                                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-2">
-                                            <span class="material-symbols-outlined text-3xl">groups</span>
-                                        </div>
-                                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Village Meet
-                                        </h3>
-                                        <div class="flex items-baseline gap-1 text-slate-900 dark:text-slate-100">
-                                            <span class="text-3xl font-black">₹1,00,000</span>
-                                            <span class="text-slate-500 text-sm font-medium">one-time</span>
-                                        </div>
-                                        <p class="text-xs text-slate-500">Community outreach by Flexon scouts</p>
-                                    </div>
-                                    <a href="payment.html"
-                                        class="w-full flex cursor-pointer items-center justify-center rounded-lg h-12 px-4 bg-primary text-white text-sm font-bold tracking-wide group-hover:scale-[1.02] transition-transform">
-                                        Fund this Future
-                                    </a>
-                                    <ul class="flex flex-col gap-3">
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Host Flexon regional tournaments
-                                        </li>
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Talent scouting camp setup
-                                        </li>
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Kits for 50+ local children
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div
-                                    class="flex flex-col gap-6 rounded-xl border border-primary/10 bg-white dark:bg-slate-800/50 p-8 shadow-sm hover:shadow-md transition-shadow group">
-                                    <div class="flex flex-col gap-2">
-                                        <div
-                                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-2">
-                                            <span class="material-symbols-outlined text-3xl">stadium</span>
-                                        </div>
-                                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Legacy Ground
-                                        </h3>
-                                        <div class="flex items-baseline gap-1 text-slate-900 dark:text-slate-100">
-                                            <span class="text-3xl font-black">₹5,00,000</span>
-                                            <span class="text-slate-500 text-sm font-medium">one-time</span>
-                                        </div>
-                                        <p class="text-xs text-slate-500">Permanent Flexon Academy infrastructure</p>
-                                    </div>
-                                    <button
-                                        class="w-full flex cursor-pointer items-center justify-center rounded-lg h-12 px-4 bg-primary text-white text-sm font-bold tracking-wide group-hover:scale-[1.02] transition-transform">
-                                        Fund this Future
-                                    </button>
-                                    <ul class="flex flex-col gap-3">
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Flexon state-of-the-art facility
-                                        </li>
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            High-quality synthetic tracks
-                                        </li>
-                                        <li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-400">
-                                            <span
-                                                class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                                            Permanent community training hub
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+
+            <main class="flex-1 max-w-[1200px] mx-auto w-full px-6 py-10 lg:py-16">
+                <!-- Hero Section -->
+                <div class="mb-16 text-center lg:text-left flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <div class="flex items-center justify-center lg:justify-start gap-2 text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+                            <span class="text-xs font-black uppercase tracking-widest">Support Our Mission</span>
                         </div>
-                        <aside class="w-full lg:w-80 flex flex-col gap-6">
-                            <div class="rounded-xl bg-primary/5 dark:bg-primary/10 p-6 flex flex-col gap-6">
-                                <div class="flex flex-col gap-1">
-                                    <h4 class="text-slate-900 dark:text-slate-100 font-bold">Flexon Impact Portfolio
-                                    </h4>
-                                    <p class="text-slate-500 dark:text-slate-400 text-sm">Transparency and
-                                        Accountability</p>
+                        <h1
+                            class="text-secondary dark:text-white text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-6 leading-tight">
+                            Fund a<br /><span class="text-primary">Future</span>
+                        </h1>
+                        <div class="h-1.5 w-24 bg-primary rounded-full mb-8 mx-auto lg:mx-0"></div>
+                        <p
+                            class="text-slate-600 dark:text-slate-400 text-xl md:text-2xl leading-relaxed mb-8 font-medium">
+                            Join Flexon Sports Foundation in providing the infrastructure, coaching, and essential
+                            resources for rural talent to conquer the world stage.
+                        </p>
+                        <p
+                            class="text-primary text-xl font-bold italic border-l-4 border-primary pl-4 py-2 font-serif text-left inline-block">
+                            "A donation is a transaction; an investment is a transformation. Choose to invest."
+                        </p>
+                    </div>
+
+                    <div class="lg:w-1/2 rounded-3xl overflow-hidden shadow-2xl relative h-80 lg:h-[400px] w-full">
+                        <div class="absolute inset-0 bg-cover bg-center"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuACNexQhHWJNVRjoxhnpnp1scLKlAGl_bK_eG74qZt-6Kp2p0aTO08HPSHGpNslVRo4O5qrj3z2EI0SLxb-S1peWjO723P41WbQ0Dq6p1i0deM39eNk9TZqKXgMLL1FMmJ4PlikwbayLH9GM7rz7TNN18rSgDxdPm-IIh80mGOsp1_WC0nmyfQqrN4mUyMbUqVk8jZyrQHCuvQ1fq3aPYC4gWhrtERkD1XjZB-8Ch1HxTmUjc1qBwxJ_dUIjjGNZhGNC2z-88H0McjN');">
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent flex items-end p-8">
+                            <p
+                                class="text-white text-sm font-bold uppercase tracking-widest bg-primary/90 px-4 py-2 rounded-lg backdrop-blur-sm">
+                                Empowering Local Talent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
+                    <!-- Investment Tiers -->
+                    <div class="lg:w-2/3">
+                        <h2
+                            class="text-3xl font-bold uppercase tracking-widest text-secondary dark:text-white mb-8 border-b border-slate-200 dark:border-slate-800 pb-4">
+                            Investment Tiers</h2>
+
+                        <div class="space-y-6">
+                            <!-- Tier 1 -->
+                            <div
+                                class="bg-white dark:bg-slate-900 rounded-[2rem] p-8 md:p-10 shadow-lg border-2 border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-colors group flex flex-col md:flex-row gap-8 items-center justify-between">
+                                <div class="flex-1 text-center md:text-left">
+                                    <div class="flex items-center justify-center md:justify-start gap-4 mb-4">
+                                        <div
+                                            class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                            <span class="material-symbols-outlined text-2xl">checkroom</span>
+                                        </div>
+                                        <h3 class="text-2xl font-bold text-secondary dark:text-white">The Starter Kit
+                                        </h3>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-400 font-medium">Funds a child's
+                                        professional training gear for a full 6 months.</p>
                                 </div>
-                                <div class="flex flex-col gap-4">
-                                    <div class="flex items-center gap-3">
-                                        <div class="p-2 rounded-lg bg-primary/20 text-primary">
-                                            <span class="material-symbols-outlined">receipt_long</span>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm font-bold">80G Tax Benefits</p>
-                                            <p class="text-xs text-slate-500 dark:text-slate-400">50% Exemption for
-                                                donors</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <div class="p-2 rounded-lg bg-primary/20 text-primary">
-                                            <span class="material-symbols-outlined">shield</span>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm font-bold">Academy Transparency</p>
-                                            <p class="text-xs text-slate-500 dark:text-slate-400">Verified impact audits
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <div class="p-2 rounded-lg bg-primary/20 text-primary">
-                                            <span class="material-symbols-outlined">handshake</span>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm font-bold">CSR Compliant</p>
-                                            <p class="text-xs text-slate-500 dark:text-slate-400">Official CSR
-                                                registration</p>
-                                        </div>
-                                    </div>
+                                <div class="flex flex-col items-center md:items-end w-full md:w-auto">
+                                    <p class="text-4xl font-black text-primary mb-4">₹2,000</p>
+                                    <a href="payment.html"
+                                        class="w-full md:w-auto bg-secondary text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-primary transition-colors text-center shadow-lg">
+                                        Invest Now
+                                    </a>
                                 </div>
-                                <button
-                                    class="flex items-center justify-center gap-2 w-full rounded-lg border border-primary text-primary py-2 text-sm font-bold hover:bg-primary hover:text-white transition-all">
-                                    <span class="material-symbols-outlined text-lg">download</span>
-                                    Academy Annual Report
-                                </button>
                             </div>
-                            <div class="rounded-xl bg-slate-900 dark:bg-slate-800 p-6 text-white flex flex-col gap-4">
-                                <div class="size-10 rounded-full bg-primary flex items-center justify-center">
-                                    <span class="material-symbols-outlined">verified</span>
+
+                            <!-- Tier 2 -->
+                            <div
+                                class="bg-white dark:bg-slate-900 rounded-[2rem] p-8 md:p-10 shadow-xl border-4 border-primary relative group flex flex-col md:flex-row gap-8 items-center justify-between overflow-hidden">
+                                <div
+                                    class="absolute top-0 right-0 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-bl-xl z-10">
+                                    Most Impactful</div>
+                                <div class="flex-1 text-center md:text-left relative z-10">
+                                    <div class="flex items-center justify-center md:justify-start gap-4 mb-4">
+                                        <div
+                                            class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                            <span class="material-symbols-outlined text-2xl">restaurant</span>
+                                        </div>
+                                        <h3 class="text-2xl font-bold text-secondary dark:text-white">The Nutrition
+                                            Shield</h3>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-400 font-medium">Provides a highly
+                                        specialized, high-performance diet for a year.</p>
                                 </div>
-                                <div>
-                                    <h5 class="font-bold mb-1">Tax Savings</h5>
-                                    <p class="text-slate-300 text-xs leading-relaxed">
-                                        As a registered NGO, all donations to Flexon Sports Academy are 50% tax exempt
-                                        under Section 80G.
-                                    </p>
+                                <div class="flex flex-col items-center md:items-end w-full md:w-auto relative z-10">
+                                    <p class="text-4xl font-black text-primary mb-4">₹5,000</p>
+                                    <a href="payment.html"
+                                        class="w-full md:w-auto bg-primary text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-red-600 transition-colors text-center shadow-[0_10px_20px_-10px_rgba(239,68,68,0.8)]">
+                                        Invest Now
+                                    </a>
                                 </div>
-                                <a class="text-primary text-xs font-bold flex items-center gap-1 hover:underline"
-                                    href="#">
-                                    View Certification <span
-                                        class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </div>
+
+                            <!-- Tier 3 -->
+                            <div
+                                class="bg-white dark:bg-slate-900 rounded-[2rem] p-8 md:p-10 shadow-lg border-2 border-slate-100 dark:border-slate-800 hover:border-primary/50 transition-colors group flex flex-col md:flex-row gap-8 items-center justify-between">
+                                <div class="flex-1 text-center md:text-left">
+                                    <div class="flex items-center justify-center md:justify-start gap-4 mb-4">
+                                        <div
+                                            class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                            <span class="material-symbols-outlined text-2xl">stadium</span>
+                                        </div>
+                                        <h3 class="text-2xl font-bold text-secondary dark:text-white">The Tournament
+                                            Sponsor</h3>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-400 font-medium">Fuels an entire regional
+                                        sports meet, scouting the next generation.</p>
+                                </div>
+                                <div class="flex flex-col items-center md:items-end w-full md:w-auto">
+                                    <p class="text-4xl font-black text-primary mb-4">₹25,000</p>
+                                    <a href="payment.html"
+                                        class="w-full md:w-auto bg-secondary text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-primary transition-colors text-center shadow-lg">
+                                        Invest Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-center mt-6">
+                                <a href="payment.html"
+                                    class="text-primary font-bold text-sm uppercase tracking-widest hover:underline flex items-center justify-center gap-1">
+                                    Enter Custom Amount <span
+                                        class="material-symbols-outlined text-lg">arrow_forward</span>
                                 </a>
                             </div>
-                            <div class="rounded-xl overflow-hidden aspect-[4/3] relative">
-                                <img alt="Athlete Training" class="w-full h-full object-cover"
-                                    data-alt="Rural Indian athlete practicing on a dusty field at sunset"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwjEEtmnMnZBv0SnYlmAcpjouw-lPKhEKHvYlfF8X3Lic881ULPqrC_leAEXliTSSW9WPQsFwbZSOBZuEsCYVOLPvDC30C2Gef8BESP1xfUaOaGWPRzd6m1cAldwGGA-Vm-AN9ixHXZ27rHh_4czn9OHff_O10HIZIZijx5INNEDgOV050wR34rwkOFB6nnpy9oDdLpCpjMalSyAH1YQBgvR7cFdC7fKfNDMGQJCG2dc7Brcv6r5YwASNzOJhyexElLX3xs492FmG_" />
+                        </div>
+                    </div>
+
+                    <!-- Why Partner With Us (Trust & Transparency Sidebar) -->
+                    <div class="lg:w-1/3">
+                        <div class="sticky top-28 space-y-6">
+                            <!-- Trust Banner -->
+                            <div
+                                class="bg-primary/5 border border-primary/20 rounded-3xl p-8 text-center flex flex-col items-center">
                                 <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-end items-end p-4">
-                                    <p class="text-white text-xs font-medium">Empowering Flexon talent at the grassroots
-                                        level.</p>
+                                    class="bg-primary text-white size-16 rounded-full flex items-center justify-center shadow-lg mb-4">
+                                    <span class="material-symbols-outlined text-3xl">verified</span>
+                                </div>
+                                <h3
+                                    class="text-xl font-bold uppercase tracking-widest text-secondary dark:text-white mb-2">
+                                    100% Tax Deductible</h3>
+                                <p class="text-slate-500 text-sm">Avail 50% tax exemption under Section 80G for all your
+                                    philanthropic investments.</p>
+                            </div>
+
+                            <!-- Why Partner with Us -->
+                            <div class="bg-secondary rounded-3xl p-8 shadow-2xl relative overflow-hidden text-white">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-[50px] rounded-full">
+                                </div>
+                                <div class="relative z-10">
+                                    <div class="flex items-center gap-3 mb-6">
+                                        <span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+                                        <h3 class="text-xl font-black uppercase tracking-widest">Why Partner With Us?
+                                        </h3>
+                                    </div>
+
+                                    <ul class="space-y-6">
+                                        <li class="flex items-start gap-4">
+                                            <span class="material-symbols-outlined text-primary mt-1">location_on</span>
+                                            <div>
+                                                <p class="font-bold leading-tight">Verified reach in 12 underrepresented
+                                                    districts.</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-4">
+                                            <span class="material-symbols-outlined text-primary mt-1">pie_chart</span>
+                                            <div>
+                                                <p class="font-bold leading-tight">Deep local partnerships guaranteeing
+                                                    100% fund utilization on ground.</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start gap-4">
+                                            <span class="material-symbols-outlined text-primary mt-1">monitoring</span>
+                                            <div>
+                                                <p class="font-bold leading-tight">Real-time impact tracking for every
+                                                    sponsorship tier.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </aside>
+
+                            <div
+                                class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 text-center">
+                                <p class="text-slate-500 text-sm mb-4 font-bold uppercase tracking-widest">Corporate CSR
+                                    Inquiries</p>
+                                <a href="#"
+                                    class="text-secondary dark:text-white text-sm font-bold flex items-center justify-center gap-2 hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">mail</span> partnerships@flexonsports.org
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
-            <footer class="mt-auto px-6 lg:px-20 py-10 border-t border-primary/10">
-                <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div class="flex items-center gap-3 opacity-60">
-                        <span class="material-symbols-outlined">bolt</span>
-                        <p class="text-xs">© 2024 Flexon Sports Academy. Empowering Untapped Excellence.</p>
+
+            <footer
+                class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 px-10 py-10 mt-auto">
+                <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-2 opacity-60">
+                        <span class="material-symbols-outlined text-primary">sports_kabaddi</span>
+                        <span class="text-sm font-bold uppercase tracking-tighter">Flexon Sports Foundation ©
+                            2026</span>
                     </div>
-                    <div class="flex gap-6 text-xs font-medium text-slate-500 dark:text-slate-400">
-                        <a class="hover:text-primary" href="#">Privacy Policy</a>
-                        <a class="hover:text-primary" href="#">Terms of Service</a>
-                        <a class="hover:text-primary" href="#">Contact Us</a>
+                    <div
+                        class="flex flex-wrap justify-center gap-8 text-sm font-bold uppercase tracking-widest text-slate-500">
+                        <a class="hover:text-primary transition-colors" href="home.html">Home</a>
+                        <a class="hover:text-primary transition-colors" href="events.html">Events</a>
+                        <a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
+                        <a class="hover:text-primary transition-colors" href="payment.html">Donate</a>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
-
 </body>
 
 </html>

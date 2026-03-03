@@ -1,9 +1,10 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>FLEXON SPORTS ACADEMY - Empowering Rural Grit</title>
+    <title>FLEXON SPORTS FOUNDATION - Empowering Rural Grit</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
@@ -16,9 +17,9 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#f27f0d", // Action Orange
+                        "primary": "#ef4444", // Action Red
                         "navy-custom": "#1c140d",
-                        "saffron-accent": "#f27f0d",
+                        "saffron-accent": "#ef4444",
                         "background-light": "#f8f7f5",
                         "background-dark": "#121212",
                     },
@@ -40,528 +41,458 @@
         }
     </script>
     <style type="text/tailwindcss">
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-        .hero-gradient {
-            background: linear-gradient(to bottom, rgba(28, 20, 13, 0.4), rgba(28, 20, 13, 0.8), rgba(28, 20, 13, 0.95));
-        }
-        .text-glow {
-            text-shadow: 0 0 30px rgba(242, 127, 13, 0.4);
-        }
-        .text-outline {
-            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
-        }
-        .flexon-massive {
-            font-size: clamp(8rem, 20vw, 18rem);
-            line-height: 0.8;
-            letter-spacing: -0.05em;
-        }
-        @keyframes slideShow {
-            0%, 28% { opacity: 1; z-index: 10; }
-            33%, 100% { opacity: 0; z-index: 0; }
-        }
-        @keyframes progressFill {
-            0% { width: 0%; }
-            100% { width: 100%; }
-        }
-        .achievement-slider .slide {
-            position: absolute;
-            inset: 0;
-            opacity: 0;
-            animation: slideShow 15s infinite;
-        }
-        .achievement-slider .slide:nth-child(2) { animation-delay: 5s; }
-        .achievement-slider .slide:nth-child(3) { animation-delay: 10s; }
-        .progress-bar-inner {
-            animation: progressFill 5s linear infinite;
-        }
-        .logo-marquee-container {
-            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-        }
+        body { font-family: 'Montserrat', sans-serif; }
+        .hero-gradient { background: linear-gradient(to bottom, rgba(28, 20, 13, 0.4), rgba(28, 20, 13, 0.8), rgba(28, 20, 13, 0.95)); }
+        .text-glow { text-shadow: 0 0 30px rgba(239, 68, 68, 0.4); }
+        .text-outline { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1); }
+        .flexon-massive { font-size: clamp(8rem, 20vw, 18rem); line-height: 0.8; letter-spacing: -0.05em; }
+        .logo-marquee-container { mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); }
     </style>
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-navy-custom dark:text-slate-100">
     <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <div class="layout-container flex h-full grow flex-col">
+            <!-- Header -->
             <header
-                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-20 py-4 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md sticky top-0 z-50">
-                <div class="flex items-center gap-8">
-                    <div class="flex items-center gap-3">
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-4 md:px-8 lg:px-12 xl:px-20 py-4 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md sticky top-0 z-50">
+                <div class="flex items-center gap-4 xl:gap-8">
+                    <div class="flex items-center gap-2 xl:gap-3">
                         <div class="text-primary flex items-center justify-center">
-                            <span class="material-symbols-outlined text-4xl font-bold">bolt</span>
+                            <span class="material-symbols-outlined text-3xl xl:text-4xl font-bold">bolt</span>
                         </div>
-                        <h2 class="text-navy-custom dark:text-white text-xl font-black uppercase tracking-tighter">
-                            FLEXON SPORTS ACADEMY</h2>
+                        <h2
+                            class="text-navy-custom dark:text-white text-base xl:text-xl font-black uppercase tracking-tighter">
+                            FLEXON SPORTS FOUNDATION</h2>
                     </div>
-                    <nav class="hidden lg:flex items-center gap-8">
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    <nav class="hidden lg:flex items-center gap-4 xl:gap-6">
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             href="home.html">Home</a>
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="flexonlegecy.html">About Us</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             href="services.html">Services</a>
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             href="achivements.html">Achievements</a>
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
-                            href="flexonlegecy.html">Legacy</a>
-                        <a class="text-slate-800 dark:text-slate-200 text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="events.html">Events</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                            href="blog.html">Blog</a>
+                        <a class="text-slate-800 dark:text-slate-200 text-[10px] xl:text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
                             href="donation.html">Support</a>
                     </nav>
                 </div>
-                <div class="flex flex-1 justify-end gap-6 items-center">
-                    <a href="payment.html"
-                        class="hidden md:flex min-w-[140px] cursor-pointer items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-xs font-black uppercase tracking-widest shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
-                        Donate Now
-                    </a>
-                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20"
+                <div class="flex flex-1 justify-end gap-3 xl:gap-6 items-center">
+                    <a href="donation.html"
+                        class="hidden md:flex min-w-[120px] xl:min-w-[140px] cursor-pointer items-center justify-center rounded-full h-10 px-4 xl:px-6 bg-primary text-white text-[10px] xl:text-xs font-black uppercase tracking-widest shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">Donate
+                        Now</a>
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 xl:size-10 border-2 border-primary/20"
                         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNtL4op4hry3FDm44ZNRDU7SzzR79ScZhmYMtY9JcRSzc5gCx7rL5DoFcCmsMr9f-5-65JBAXOR3_DFEoZ5Y_j--dUegMaJfGZHtmHuhy9oF3REm7t10NJ4f0QyCSGnhhRC6kDwJg1a8OyNiWJ7idObZFkiXt0bIFcRxKhqKwIqbS48lYOeGAibP1OL6iAk4hlxJ8VDnwj-oRQLUV-AJQcBYeemdk8ho_56iaqRLhnWREp77AHcR58e_kc4zWohDhHd7cQOZv3w-eM");'>
                     </div>
                 </div>
             </header>
+
             <main class="flex-1">
+                <!-- 1. Hero Section -->
                 <section class="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
                     <div class="absolute inset-0 w-full h-full bg-cover bg-center scale-110"
                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqy6-xVfqCvwvMyyIvuVXfmtFTT6n-tefNgsso8KobuwXWSeiwzVHO7w76ZpG7pjcPRoQ3gszumi2PPsC8woSGENTSwo6NrhR24lLhpL1KsG2AOt_GjG9lyGNbxZbL3Bi-FKDhH4GY6B6mCioYdENU6aqXxNkPnZclRZzN5pbxwxueWq8vYOLAx_tXzbjb0yKf0I9BaXHSqqwhEVPwInZlf4-VuTigGWV32oxq1dHDjqQjFQLPLZnb-CmSbT0VuLbolrVMTr7q4UDd');">
-                        <div class="absolute inset-0 bg-black/50"></div>
+                        <div class="absolute inset-0 bg-black/60"></div>
                     </div>
                     <div class="absolute inset-0 hero-gradient"></div>
                     <div
                         class="absolute inset-0 flex items-center justify-center overflow-hidden select-none pointer-events-none opacity-20 dark:opacity-10">
                         <h1 class="flexon-massive font-black text-white text-outline uppercase">FLEXON</h1>
                     </div>
-                    <div class="relative z-10 container mx-auto px-6 text-center max-w-6xl py-20">
+                    <div class="relative z-10 container mx-auto px-6 text-center max-w-6xl py-20 mt-10">
                         <div class="flex flex-col items-center">
                             <span
-                                class="inline-block py-2 px-8 rounded-full bg-primary text-white text-[11px] font-black uppercase tracking-[0.4em] mb-10 shadow-2xl">
-                                FLEXON SPORTS ACADEMY
+                                class="inline-block py-2 px-8 rounded-full bg-primary text-white text-[11px] font-black uppercase tracking-[0.4em] mb-8 shadow-2xl">
+                                FLEXON SPORTS FOUNDATION
                             </span>
-                            <div class="mb-4">
-                                <h2
-                                    class="text-white/40 text-4xl md:text-6xl font-black tracking-tighter uppercase mb-2">
-                                    THE FUTURE IS</h2>
+                            <div class="mb-6">
                                 <h1
-                                    class="text-white text-7xl md:text-[140px] font-[900] leading-[0.8] tracking-tighter mb-10 text-glow">
-                                    FLEXON<br />
-                                    <span class="text-primary">ACADEMY</span>
+                                    class="text-white text-5xl md:text-7xl lg:text-[100px] font-black leading-[1.1] tracking-tighter uppercase mb-6 drop-shadow-lg text-glow">
+                                    FUELING RURAL GRIT.<br />
+                                    <span class="text-primary">POWERING NATIONAL DREAMS.</span>
                                 </h1>
                             </div>
-                            <div class="h-1 w-24 bg-primary mb-10"></div>
-                            <h2
-                                class="text-white text-3xl md:text-5xl font-black leading-tight tracking-tighter mb-8 uppercase">
-                                FUELING RURAL GRIT.<br />
-                                <span class="text-primary/90">POWERING NATIONAL DREAMS.</span>
-                            </h2>
+                            <div class="h-1 w-32 bg-primary mb-8"></div>
                             <p
-                                class="text-slate-100 text-lg md:text-xl font-bold mb-12 max-w-3xl mx-auto leading-relaxed opacity-90 drop-shadow-md">
-                                A mission-driven movement empowering grassroots athletes across rural India to conquer
-                                the global stage. We transform raw potential into world-class performance.
+                                class="text-white/90 text-xl md:text-3xl font-bold uppercase tracking-widest mb-8 border-b border-primary/50 pb-4 italic">
+                                "Talent is universal; opportunity is not. We are here to change the math."
+                            </p>
+                            <p
+                                class="text-slate-200 text-lg md:text-xl font-medium mb-12 max-w-3xl mx-auto leading-relaxed opacity-95 drop-shadow-md">
+                                Transforming shared vision into grassroots reality. We identify, fund, and mentor the
+                                next generation of Indian athletes in the heartlands where talent is born.
                             </p>
                             <div class="flex flex-col sm:flex-row gap-6 justify-center w-full max-w-2xl">
-                                <a href="payment.html"
-                                    class="group flex flex-1 min-w-[240px] cursor-pointer items-center justify-center rounded-full h-18 py-5 px-10 bg-primary text-white text-base font-black uppercase tracking-[0.2em] shadow-[0_0_50px_rgba(242,127,13,0.4)] hover:scale-105 active:scale-95 transition-all">
+                                <a href="donation.html"
+                                    class="group flex flex-1 min-w-[240px] cursor-pointer items-center justify-center rounded-full h-16 py-4 px-8 bg-primary text-white text-base font-black uppercase tracking-[0.2em] shadow-[0_0_30px_rgba(239,68,68,0.4)] hover:scale-105 active:scale-95 transition-all">
                                     Join the Mission
                                     <span
                                         class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
                                 </a>
-                                <button
-                                    class="flex flex-1 min-w-[240px] cursor-pointer items-center justify-center rounded-full h-18 py-5 px-10 bg-white/5 backdrop-blur-2xl border-2 border-white/20 text-white text-base font-black uppercase tracking-[0.2em] hover:bg-white/10 transition-all">
-                                    Impact Dashboard
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/70 flex flex-col items-center gap-3">
-                        <span class="text-[10px] uppercase tracking-[0.5em] font-black text-primary">Scoreboard of
-                            Transformation</span>
-                        <span class="material-symbols-outlined animate-bounce text-3xl">expand_more</span>
-                    </div>
-                </section>
-                <section class="bg-white dark:bg-background-dark py-32 px-6 md:px-20 relative" id="impact">
-                    <div class="max-w-[1200px] mx-auto">
-                        <div class="flex flex-col lg:flex-row items-end justify-between mb-20 gap-8">
-                            <div class="max-w-2xl">
-                                <h3 class="text-primary font-black text-sm uppercase tracking-[0.4em] mb-4">Real-Time
-                                    Impact Dashboard</h3>
-                                <h2
-                                    class="text-navy-custom dark:text-white text-5xl md:text-7xl font-black leading-none tracking-tighter uppercase">
-                                    THE SCOREBOARD OF TRANSFORMATION</h2>
-                            </div>
-                            <div
-                                class="flex items-center gap-3 bg-slate-100 dark:bg-slate-800/50 px-6 py-4 rounded-full border border-primary/10">
-                                <span
-                                    class="size-3 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.5)]"></span>
-                                <span
-                                    class="text-navy-custom dark:text-slate-300 text-[11px] font-black uppercase tracking-[0.2em]">Live
-                                    Athlete Data Feed</span>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                            <div
-                                class="relative group p-10 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900/50 border-b-8 border-slate-200 dark:border-slate-800 hover:border-primary transition-all duration-500 hover:-translate-y-2">
-                                <div class="text-primary mb-8">
-                                    <span class="material-symbols-outlined text-6xl font-light">home_work</span>
-                                </div>
-                                <div class="mb-6">
-                                    <p
-                                        class="text-navy-custom/60 dark:text-slate-400 text-[11px] font-black uppercase tracking-widest mb-2">
-                                        Schools Activated</p>
-                                    <p class="text-navy-custom dark:text-white text-7xl font-black tracking-tighter">
-                                        500+</p>
-                                </div>
-                                <p
-                                    class="text-navy-custom/70 dark:text-slate-400 text-base font-medium leading-relaxed">
-                                    Integrated FLEXON high-performance curriculum in rural government schools across 12
-                                    states.
-                                </p>
-                                <div
-                                    class="mt-8 h-1.5 w-16 bg-primary/20 group-hover:w-full transition-all duration-700">
-                                </div>
-                            </div>
-                            <div
-                                class="relative group p-10 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900/50 border-b-8 border-slate-200 dark:border-slate-800 hover:border-primary transition-all duration-500 hover:-translate-y-2">
-                                <div class="text-primary mb-8">
-                                    <span class="material-symbols-outlined text-6xl font-light">currency_rupee</span>
-                                </div>
-                                <div class="mb-6">
-                                    <p
-                                        class="text-navy-custom/60 dark:text-slate-400 text-[11px] font-black uppercase tracking-widest mb-2">
-                                        Impact Capital</p>
-                                    <p class="text-navy-custom dark:text-white text-7xl font-black tracking-tighter">₹42
-                                        Cr</p>
-                                </div>
-                                <p
-                                    class="text-navy-custom/70 dark:text-slate-400 text-base font-medium leading-relaxed">
-                                    Dedicated funding for world-class infrastructure, pro coaching, and nutrition hubs.
-                                </p>
-                                <div
-                                    class="mt-8 h-1.5 w-16 bg-primary/20 group-hover:w-full transition-all duration-700">
-                                </div>
-                            </div>
-                            <div
-                                class="relative group p-10 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900/50 border-b-8 border-slate-200 dark:border-slate-800 hover:border-primary transition-all duration-500 hover:-translate-y-2">
-                                <div class="text-primary mb-8">
-                                    <span class="material-symbols-outlined text-6xl font-light">female</span>
-                                </div>
-                                <div class="mb-6">
-                                    <p
-                                        class="text-navy-custom/60 dark:text-slate-400 text-[11px] font-black uppercase tracking-widest mb-2">
-                                        Female Athletes</p>
-                                    <p class="text-navy-custom dark:text-white text-7xl font-black tracking-tighter">
-                                        15k+</p>
-                                </div>
-                                <p
-                                    class="text-navy-custom/70 dark:text-slate-400 text-base font-medium leading-relaxed">
-                                    Empowering young women through elite training pipelines and rural scouting camps.
-                                </p>
-                                <div
-                                    class="mt-8 h-1.5 w-16 bg-primary/20 group-hover:w-full transition-all duration-700">
-                                </div>
+                                <a href="#impact"
+                                    class="flex flex-1 min-w-[240px] cursor-pointer items-center justify-center rounded-full h-16 py-4 px-8 bg-white/10 backdrop-blur-2xl border-2 border-white/30 text-white text-base font-black uppercase tracking-[0.2em] hover:bg-white/20 transition-all">
+                                    View Our Rural Impact
+                                </a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="relative h-[600px] w-full overflow-hidden bg-navy-custom">
-                    <div class="achievement-slider relative h-full w-full">
-                        <div class="slide flex items-center justify-center">
-                            <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrlTBG9rhN1R2VHvUUmI5x43Me_ZcDFvRikA__RubKKSCYa6kQSsDtItsg-yppouMNiHyTPVOzQyTl8G-u-wPdYwWRm9M6u7PcUlNOzcG9U9HaK6DuyZnGH4zFa-Gq1fct6aq3lJdWha9x3vw5SsQjXD8G-ot4SlYgGuYUYhXw5pNF-0STNqxjt4icKD-fYYbc4PM4ZbqexnxMhExCyxNNFj1jD5zoyvJAlydhfBZVT2pcGPKCvRvcG-ycQmHK0KBYj1L4_f8sozor');">
-                                <div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
-                            </div>
-                            <div class="relative z-20 max-w-4xl px-6 text-center">
-                                <div
-                                    class="bg-white/10 backdrop-blur-md border border-white/20 p-12 rounded-[3rem] shadow-2xl">
-                                    <h2
-                                        class="text-primary text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6">
-                                        The Grassroots Gold Standard</h2>
-                                    <p class="text-white text-2xl md:text-3xl font-bold uppercase tracking-widest mb-4">
-                                        150+ Hubs Established</p>
-                                    <p class="text-slate-200 text-lg md:text-xl font-medium max-w-2xl mx-auto">Building
-                                        elite training infrastructure where it matters most—the heart of rural India.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide flex items-center justify-center">
-                            <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsiplEcczCrc4TcW0La9dIXmjDF-gpmLNT_r2LgLWJJcajrGbVyfSBogesQJ_Nyyq5DHnjxxE48hrDuIqw5_94_wfc2Nk7y_Sc0_KfzQyFZNaAaB-4jBcNi5gfmiGdBnxSErw2VxZw6rQ5XEtuxFHnYM5C_JIcIyH-07vSYinhFmnTKW0cw7HlCDLeWQay00i-aYG6eiU_Qt6V_XXVd7NcYgZgO4ahMs1MGwWvzj2dgqnHskzYbnCrVFKZkZ-JOTqbF5OZTNfPlflo');">
-                                <div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
-                            </div>
-                            <div class="relative z-20 max-w-4xl px-6 text-center">
-                                <div
-                                    class="bg-white/10 backdrop-blur-md border border-white/20 p-12 rounded-[3rem] shadow-2xl">
-                                    <h2
-                                        class="text-primary text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6">
-                                        The Zero-Dropout Milestone</h2>
-                                    <p class="text-white text-2xl md:text-3xl font-bold uppercase tracking-widest mb-4">
-                                        98% Retention Rate</p>
-                                    <p class="text-slate-200 text-lg md:text-xl font-medium max-w-2xl mx-auto">Holistic
-                                        support systems ensuring every athlete stays on the path to excellence.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide flex items-center justify-center">
-                            <div class="absolute inset-0 bg-cover bg-center"
-                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsmcIsZ_g6kEAAaW-LkVdw4m9oQ4zk0YSGw1Y2W-yLHF4iPr9kdaMEQq02rOM-6RSUVGU4purIBYVb5SaJ1QsRYF7rsa4vVG-jySo_aOXWS3mpzT_xMiNVpGRs_jeALA25tUrsoSfeFUynJWptypwpHTRSTOoFjp1X_IN3FEvg3BryGkhVSUq8ZkEWe-xhm8vTN3SnK1KFKkmPxr1iMzVhw_EyTlXp2ffI0GSPH4LzzXP9DnPJ80mQm1vn0aHTGI_oqtoKS8p5mFqB');">
-                                <div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
-                            </div>
-                            <div class="relative z-20 max-w-4xl px-6 text-center">
-                                <div
-                                    class="bg-white/10 backdrop-blur-md border border-white/20 p-12 rounded-[3rem] shadow-2xl">
-                                    <h2
-                                        class="text-primary text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6">
-                                        National Breakthroughs</h2>
-                                    <p class="text-white text-2xl md:text-3xl font-bold uppercase tracking-widest mb-4">
-                                        42+ Scholars</p>
-                                    <p class="text-slate-200 text-lg md:text-xl font-medium max-w-2xl mx-auto">From
-                                        village fields to national arenas—the Flexon movement is creating the next
-                                        generation of icons.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 left-0 w-full h-2 bg-white/10 z-30">
-                        <div class="progress-bar-inner h-full bg-primary shadow-[0_0_15px_rgba(242,127,13,0.8)]"></div>
-                    </div>
-                </section>
-                <section class="py-32 px-6 md:px-20 bg-slate-50 dark:bg-slate-900/30">
-                    <div class="max-w-[1200px] mx-auto text-center mb-24">
-                        <h2
-                            class="text-navy-custom dark:text-white text-5xl font-black mb-6 tracking-tighter uppercase">
-                            THE FLEXON METHODOLOGY</h2>
-                        <p
-                            class="text-navy-custom/60 dark:text-slate-400 text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-                            We don’t just spot talent. We build the entire ecosystem where rural excellence becomes
-                            inevitable.
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-[1200px] mx-auto">
-                        <div class="flex flex-col gap-8 text-center items-center">
-                            <div
-                                class="size-24 rounded-3xl bg-white dark:bg-slate-800 shadow-2xl flex items-center justify-center text-primary transform rotate-3 hover:rotate-0 transition-transform">
-                                <span class="material-symbols-outlined text-5xl">diversity_3</span>
-                            </div>
-                            <h3 class="text-navy-custom dark:text-white text-2xl font-black uppercase tracking-tight">
-                                Community Centric</h3>
-                            <p class="text-navy-custom/60 dark:text-slate-400 text-base font-medium leading-relaxed">
-                                Every FLEXON facility is a community hub, ensuring that sports development and village
-                                growth go hand-in-hand.
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-8 text-center items-center">
-                            <div
-                                class="size-24 rounded-3xl bg-white dark:bg-slate-800 shadow-2xl flex items-center justify-center text-primary transform -rotate-3 hover:rotate-0 transition-transform">
-                                <span class="material-symbols-outlined text-5xl">ads_click</span>
-                            </div>
-                            <h3 class="text-navy-custom dark:text-white text-2xl font-black uppercase tracking-tight">
-                                Mission Driven</h3>
-                            <p class="text-navy-custom/60 dark:text-slate-400 text-base font-medium leading-relaxed">
-                                Our roadmap is clear: Identify, Train, Support, and Medal. We bridge the gap between
-                                rural soil and podium steel.
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-8 text-center items-center">
-                            <div
-                                class="size-24 rounded-3xl bg-white dark:bg-slate-800 shadow-2xl flex items-center justify-center text-primary transform rotate-6 hover:rotate-0 transition-transform">
-                                <span class="material-symbols-outlined text-5xl">trophy</span>
-                            </div>
-                            <h3 class="text-navy-custom dark:text-white text-2xl font-black uppercase tracking-tight">
-                                Athlete First</h3>
-                            <p class="text-navy-custom/60 dark:text-slate-400 text-base font-medium leading-relaxed">
-                                Personalized nutrition, mental conditioning, and professional kits are standard for
-                                every FLEXON scholar.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="py-32 px-6 md:px-20 bg-white dark:bg-background-dark" id="leadership">
-                    <div class="max-w-[1200px] mx-auto">
-                        <div class="mb-20">
-                            <h3 class="text-primary font-black text-sm uppercase tracking-[0.4em] mb-4">Driving the
-                                Vision</h3>
-                            <h2
-                                class="text-navy-custom dark:text-white text-5xl md:text-6xl font-black leading-none tracking-tighter uppercase mb-6">
-                                LEADERSHIP &amp; MENTORS</h2>
-                            <div class="h-1.5 w-32 bg-primary"></div>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            <div class="group">
-                                <div
-                                    class="relative overflow-hidden aspect-[4/5] rounded-xl mb-6 bg-slate-100 border-2 border-transparent group-hover:border-primary transition-all duration-500">
-                                    <img alt="Founder"
-                                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNVvE8X1dgb14mefyWQ-Wf-d3MRpHWQQxYZ5GA8kc3XGKf668SMHFbcTudVDm0aq6euR2qJU8ilhgJ7wuYhaRoOvtpYJYMo_ijgtYQrg59hB0SMOxCznOCIR6udAawju9jvExAY9-ojPnIot2FTgLfnHV8mVR7Rpz8LD2sUIO37JVGh_GB5Rrieic-I3PXiiq0lLzD71EGwmkkNGXwL9QXSLEEIgENyKtQPWfmcLn7Q8uosfoH2aA9qL4C7rnzsbVUXFW7HLVpcLY7" />
-                                    <div
-                                        class="absolute inset-0 bg-gradient-to-t from-navy-custom via-transparent to-transparent opacity-60">
-                                    </div>
-                                </div>
-                                <h4
-                                    class="text-navy-custom dark:text-white text-xl font-extrabold uppercase tracking-tight group-hover:text-primary transition-colors">
-                                    Dr. Vikram Rathore</h4>
-                                <p class="text-primary font-black text-[10px] uppercase tracking-widest mb-4">Founding
-                                    Director &amp; CEO</p>
-                                <p class="text-navy-custom/60 dark:text-slate-400 text-sm font-medium leading-relaxed">A
-                                    former national-level sprinter and sports scientist with 15+ years of experience in
-                                    high-performance coaching across India.</p>
-                            </div>
-                            <div class="group">
-                                <div
-                                    class="relative overflow-hidden aspect-[4/5] rounded-xl mb-6 bg-slate-100 border-2 border-transparent group-hover:border-primary transition-all duration-500">
-                                    <img alt="Head Coach"
-                                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeNXLD8kvZ3qTV6W83bUsNltYeC5CoJxDcTFEpNVnfAz_B80FMwnoHZMyx4rUBGgYjjbRsJDhDBsn92vWpSBGdgfgEMkqfCKF5ZR_uyRCMjDxN7vym-o6LFekf4nyIsIzgeugc67vMox0GDbl70A2lL0BAJGSvfJIqV60ih5QXvPlmFaUVjT25pKeO6jct5zGPZflVMA-2uvQ3nTWtk-G4RFFXy57vCPd3p7M_v-SG7HAOk6LBvA-DL1HO_uo3ooWIln7uezEoRUK8" />
-                                    <div
-                                        class="absolute inset-0 bg-gradient-to-t from-navy-custom via-transparent to-transparent opacity-60">
-                                    </div>
-                                </div>
-                                <h4
-                                    class="text-navy-custom dark:text-white text-xl font-extrabold uppercase tracking-tight group-hover:text-primary transition-colors">
-                                    Ananya Singh</h4>
-                                <p class="text-primary font-black text-[10px] uppercase tracking-widest mb-4">Head of
-                                    High Performance</p>
-                                <p class="text-navy-custom/60 dark:text-slate-400 text-sm font-medium leading-relaxed">
-                                    International medalist who focuses on bridge programs for rural talent transitioning
-                                    to national competitive circuits.</p>
-                            </div>
-                            <div class="group">
-                                <div
-                                    class="relative overflow-hidden aspect-[4/5] rounded-xl mb-6 bg-slate-100 border-2 border-transparent group-hover:border-primary transition-all duration-500">
-                                    <img alt="Advisor"
-                                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8GQWPm7OExK-Gzq8MBT3yFJSr08B9jb6tE_Ac9lMGxvz2-G09IB46ybfaQzN8cOGCL5SgyGOHpddqh8fyVA1iAsmz0XLKMrV11jNJQkg_IzcY5xfQYHFDRO9n1mmEhqRFj8GKPc_Ul4x8UO695-lirXZ6ZG7gR0L8-SCK011ViPVMCcvv4aSUiPRwPZdXI5i4xAwtdmABmZpfUIHmpWTxpCOdFT3RfLiiY3ou-oRauFHhFyzbZ2gw0tpD20op1OLyjqS3jp8mgp26" />
-                                    <div
-                                        class="absolute inset-0 bg-gradient-to-t from-navy-custom via-transparent to-transparent opacity-60">
-                                    </div>
-                                </div>
-                                <h4
-                                    class="text-navy-custom dark:text-white text-xl font-extrabold uppercase tracking-tight group-hover:text-primary transition-colors">
-                                    Col. Rajat Verma</h4>
-                                <p class="text-primary font-black text-[10px] uppercase tracking-widest mb-4">Strategic
-                                    Advisor</p>
-                                <p class="text-navy-custom/60 dark:text-slate-400 text-sm font-medium leading-relaxed">A
-                                    veteran in large-scale operations and discipline, overseeing the infrastructure
-                                    expansion of Flexon across 500+ schools.</p>
-                            </div>
-                            <div class="group">
-                                <div
-                                    class="relative overflow-hidden aspect-[4/5] rounded-xl mb-6 bg-slate-100 border-2 border-transparent group-hover:border-primary transition-all duration-500">
-                                    <img alt="Mentor"
-                                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDk0X56yw6TwOG_6Q_EQ8-9djIjgVDZ4HYqescl7oiDOUKQD00hpfAAzmJTFlDGlNCBr4xM2_3qQLGvoIrOIOCW37IChAmJ4W9LZ66pCfsXu8NYfMmIS43KWDPwG-MjEQ-82Z1AJWdRaVQNEubL8LdyLBd6aRH83HLLLJez7qRpaO9XEPVRB39gOOb3Ep2jxbz876Kx1pnfMudblED1eiBQuY3sumVnl-hZ2oTJCd4rux7l1HWZJ9ujAFKBEkDOxxBI_7O_H87JUSo" />
-                                    <div
-                                        class="absolute inset-0 bg-gradient-to-t from-navy-custom via-transparent to-transparent opacity-60">
-                                    </div>
-                                </div>
-                                <h4
-                                    class="text-navy-custom dark:text-white text-xl font-extrabold uppercase tracking-tight group-hover:text-primary transition-colors">
-                                    Meera Iyer</h4>
-                                <p class="text-primary font-black text-[10px] uppercase tracking-widest mb-4">Lead
-                                    Sports Psychologist</p>
-                                <p class="text-navy-custom/60 dark:text-slate-400 text-sm font-medium leading-relaxed">
-                                    Dedicated to the mental resilience and emotional well-being of our scholars,
-                                    ensuring holistic athletic growth.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
+                <!-- Partner Strip -->
                 <section
-                    class="py-20 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 overflow-hidden">
-                    <div class="max-w-[1200px] mx-auto px-6 text-center mb-12">
-                        <p
-                            class="text-navy-custom/40 dark:text-slate-500 text-[11px] font-black uppercase tracking-[0.4em] mb-4">
-                            Institutional Trust &amp; Synergy</p>
-                        <h2 class="text-navy-custom dark:text-white text-2xl font-black uppercase tracking-tight">
-                            STRATEGIC PARTNERS &amp; SUPPORTERS</h2>
-                    </div>
+                    class="py-12 bg-white dark:bg-background-dark border-b border-slate-200 dark:border-slate-800 overflow-hidden text-center">
+                    <p
+                        class="text-navy-custom/40 dark:text-slate-500 text-[11px] font-black uppercase tracking-[0.4em] mb-6">
+                        Powered by Philanthropic Partners</p>
                     <div class="logo-marquee-container relative flex items-center">
                         <div class="flex animate-marquee whitespace-nowrap">
                             <div class="flex items-center gap-20 mx-10">
                                 <div
                                     class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">corporate_fare</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">Bharat Steel</span>
+                                    <span class="material-symbols-outlined text-4xl text-primary">corporate_fare</span>
+                                    <span
+                                        class="text-lg font-black uppercase tracking-tighter text-navy-custom dark:text-white">Bharat
+                                        Steel</span>
                                 </div>
                                 <div
                                     class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">account_balance</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">State Sports
-                                        Council</span>
+                                    <span class="material-symbols-outlined text-4xl text-primary">account_balance</span>
+                                    <span
+                                        class="text-lg font-black uppercase tracking-tighter text-navy-custom dark:text-white">State
+                                        Sports Council</span>
                                 </div>
                                 <div
                                     class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">health_and_safety</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">VitaCare
+                                    <span
+                                        class="material-symbols-outlined text-4xl text-primary">health_and_safety</span>
+                                    <span
+                                        class="text-lg font-black uppercase tracking-tighter text-navy-custom dark:text-white">VitaCare
                                         Foundation</span>
                                 </div>
                                 <div
                                     class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">school</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">Apex Global Ed</span>
-                                </div>
-                                <div
-                                    class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">rocket_launch</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">NextGen Ventures</span>
+                                    <span class="material-symbols-outlined text-4xl text-primary">school</span>
+                                    <span
+                                        class="text-lg font-black uppercase tracking-tighter text-navy-custom dark:text-white">Apex
+                                        Global Ed</span>
                                 </div>
                             </div>
+                            <!-- Duplicated for Marquee effect -->
                             <div class="flex items-center gap-20 mx-10">
                                 <div
                                     class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">corporate_fare</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">Bharat Steel</span>
+                                    <span class="material-symbols-outlined text-4xl text-primary">corporate_fare</span>
+                                    <span
+                                        class="text-lg font-black uppercase tracking-tighter text-navy-custom dark:text-white">Bharat
+                                        Steel</span>
                                 </div>
                                 <div
                                     class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">account_balance</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">State Sports
-                                        Council</span>
+                                    <span class="material-symbols-outlined text-4xl text-primary">account_balance</span>
+                                    <span
+                                        class="text-lg font-black uppercase tracking-tighter text-navy-custom dark:text-white">State
+                                        Sports Council</span>
                                 </div>
                                 <div
                                     class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">health_and_safety</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">VitaCare
+                                    <span
+                                        class="material-symbols-outlined text-4xl text-primary">health_and_safety</span>
+                                    <span
+                                        class="text-lg font-black uppercase tracking-tighter text-navy-custom dark:text-white">VitaCare
                                         Foundation</span>
                                 </div>
                                 <div
                                     class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">school</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">Apex Global Ed</span>
-                                </div>
-                                <div
-                                    class="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                    <span class="material-symbols-outlined text-4xl">rocket_launch</span>
-                                    <span class="text-lg font-black uppercase tracking-tighter">NextGen Ventures</span>
+                                    <span class="material-symbols-outlined text-4xl text-primary">school</span>
+                                    <span
+                                        class="text-lg font-black uppercase tracking-tighter text-navy-custom dark:text-white">Apex
+                                        Global Ed</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </main>
-            <footer
-                class="py-16 px-6 md:px-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark text-center">
-                <div class="flex flex-col items-center gap-8">
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary font-bold text-3xl">bolt</span>
-                        <span
-                            class="text-navy-custom dark:text-white text-xl font-black uppercase tracking-tighter">FLEXON
-                            SPORTS ACADEMY</span>
+
+                <!-- Our Identity Brief -->
+                <section class="py-24 px-6 md:px-20 bg-slate-50 dark:bg-slate-900/30">
+                    <div class="max-w-[1000px] mx-auto text-center">
+                        <h3 class="text-primary font-black text-sm uppercase tracking-[0.4em] mb-4">Our Identity</h3>
+                        <h2
+                            class="text-navy-custom dark:text-white text-4xl md:text-5xl font-black mb-10 tracking-tighter uppercase">
+                            WHERE SHARED PURPOSE MEETS GRASSROOTS POTENTIAL
+                        </h2>
+                        <div class="h-1.5 w-24 bg-primary mx-auto mb-10"></div>
+                        <p class="text-navy-custom/70 dark:text-slate-300 text-xl font-medium leading-relaxed mb-6">
+                            We are a donor-supported organization dedicated to the "unreached" student-athlete. We
+                            believe that support shouldn't just be a transaction—it should be a pair of shoes for a
+                            runner, a scholarship for a dreamer, and a stadium for a village.
+                        </p>
+                        <p class="text-2xl text-primary font-bold italic mt-8 font-serif">
+                            "Your belief is the wind beneath their feet."
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Core Services (The "How") -->
+                <section class="py-24 px-6 md:px-20 bg-white dark:bg-background-dark">
+                    <div class="max-w-[1200px] mx-auto">
+                        <div class="text-center mb-20">
+                            <h3 class="text-primary font-black text-sm uppercase tracking-[0.4em] mb-4">Our Mission
+                                Pillars</h3>
+                            <h2
+                                class="text-navy-custom dark:text-white text-4xl md:text-5xl font-black tracking-tighter uppercase">
+                                EMPOWERING THE NEXT GENERATION
+                            </h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                            <div
+                                class="group p-10 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900/50 border-t-8 border-transparent hover:border-primary transition-all duration-500 hover:-translate-y-2 shadow-lg text-center">
+                                <div
+                                    class="text-primary mb-8 bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto">
+                                    <span class="material-symbols-outlined text-4xl">stadium</span>
+                                </div>
+                                <h3
+                                    class="text-navy-custom dark:text-white text-2xl font-black uppercase tracking-tight mb-4">
+                                    Rural Sports Meets
+                                </h3>
+                                <p
+                                    class="text-navy-custom/70 dark:text-slate-400 text-base font-medium leading-relaxed mb-6">
+                                    We organize professional-grade tournaments in remote school clusters, bringing elite
+                                    standards to village grounds.
+                                </p>
+                                <p
+                                    class="text-sm text-primary font-bold italic border-l-2 border-primary pl-4 text-left">
+                                    "The road to the Olympics starts in a village schoolyard."
+                                </p>
+                            </div>
+                            <div
+                                class="group p-10 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900/50 border-t-8 border-transparent hover:border-primary transition-all duration-500 hover:-translate-y-2 shadow-lg text-center">
+                                <div
+                                    class="text-primary mb-8 bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto">
+                                    <span class="material-symbols-outlined text-4xl">shield_person</span>
+                                </div>
+                                <h3
+                                    class="text-navy-custom dark:text-white text-2xl font-black uppercase tracking-tight mb-4">
+                                    The Talent Shield
+                                </h3>
+                                <p
+                                    class="text-navy-custom/70 dark:text-slate-400 text-base font-medium leading-relaxed mb-6">
+                                    Comprehensive financial coverage for education and gear, ensuring poverty never
+                                    benches a champion.
+                                </p>
+                                <p
+                                    class="text-sm text-primary font-bold italic border-l-2 border-primary pl-4 text-left">
+                                    "No dream should be grounded for lack of gear."
+                                </p>
+                            </div>
+                            <div
+                                class="group p-10 rounded-[2.5rem] bg-slate-50 dark:bg-slate-900/50 border-t-8 border-transparent hover:border-primary transition-all duration-500 hover:-translate-y-2 shadow-lg text-center">
+                                <div
+                                    class="text-primary mb-8 bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto">
+                                    <span class="material-symbols-outlined text-4xl">architecture</span>
+                                </div>
+                                <h3
+                                    class="text-navy-custom dark:text-white text-2xl font-black uppercase tracking-tight mb-4">
+                                    Sustainable Infrastructure
+                                </h3>
+                                <p
+                                    class="text-navy-custom/70 dark:text-slate-400 text-base font-medium leading-relaxed mb-6">
+                                    We utilize dedicated grants to level playgrounds and install solar-lit facilities in
+                                    rural schools.
+                                </p>
+                                <p
+                                    class="text-sm text-primary font-bold italic border-l-2 border-primary pl-4 text-left">
+                                    "Building fields of hope for generations to come."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Impact Dashboard (The "Data") -->
+                <section class="bg-slate-50 dark:bg-slate-900/50 py-32 px-6 md:px-20 relative" id="impact">
+                    <div class="max-w-[1200px] mx-auto">
+                        <div class="flex flex-col lg:flex-row items-end justify-between mb-20 gap-8">
+                            <div class="max-w-2xl">
+                                <h3 class="text-primary font-black text-sm uppercase tracking-[0.4em] mb-4">The Data
+                                </h3>
+                                <h2
+                                    class="text-navy-custom dark:text-white text-4xl md:text-6xl font-black leading-none tracking-tighter uppercase mb-6">
+                                    THE SCOREBOARD OF TRANSFORMATION
+                                </h2>
+                                <p class="text-navy-custom/70 dark:text-slate-400 text-lg font-medium leading-relaxed">
+                                    We don't just utilize funds; we build a legacy. Every contribution is tracked to
+                                    ensure it creates a tangible social impact and changes lives on the ground.
+                                </p>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 bg-white dark:bg-slate-800 px-6 py-4 rounded-full border border-primary/20 shadow-lg">
+                                <span
+                                    class="size-3 rounded-full bg-primary animate-pulse shadow-[0_0_10px_rgba(239,68,68,0.5)]"></span>
+                                <span
+                                    class="text-navy-custom dark:text-slate-300 text-[11px] font-black uppercase tracking-[0.2em]">Real-Time
+                                    Stats</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
+                            <div
+                                class="relative group p-10 rounded-[2.5rem] bg-white dark:bg-slate-800 border-b-8 border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-500 hover:-translate-y-2 shadow-xl">
+                                <p
+                                    class="text-navy-custom/60 dark:text-slate-400 text-[12px] font-black uppercase tracking-widest mb-2">
+                                    Schools Activated</p>
+                                <p
+                                    class="text-navy-custom dark:text-white text-6xl md:text-7xl font-black tracking-tighter mb-4">
+                                    500+</p>
+                                <div class="h-1.5 w-16 bg-primary/20 group-hover:w-full transition-all duration-700">
+                                </div>
+                            </div>
+                            <div
+                                class="relative group p-10 rounded-[2.5rem] bg-white dark:bg-slate-800 border-b-8 border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-500 hover:-translate-y-2 shadow-xl">
+                                <p
+                                    class="text-navy-custom/60 dark:text-slate-400 text-[12px] font-black uppercase tracking-widest mb-2">
+                                    Impact Investment</p>
+                                <p
+                                    class="text-navy-custom dark:text-white text-6xl md:text-7xl font-black tracking-tighter mb-4">
+                                    ₹XX Cr</p>
+                                <div class="h-1.5 w-16 bg-primary/20 group-hover:w-full transition-all duration-700">
+                                </div>
+                            </div>
+                            <div
+                                class="relative group p-10 rounded-[2.5rem] bg-white dark:bg-slate-800 border-b-8 border-slate-200 dark:border-slate-700 hover:border-primary transition-all duration-500 hover:-translate-y-2 shadow-xl">
+                                <p
+                                    class="text-navy-custom/60 dark:text-slate-400 text-[12px] font-black uppercase tracking-widest mb-2">
+                                    Female Athletes</p>
+                                <p
+                                    class="text-navy-custom dark:text-white text-6xl md:text-7xl font-black tracking-tighter mb-4">
+                                    15k+</p>
+                                <div class="h-1.5 w-16 bg-primary/20 group-hover:w-full transition-all duration-700">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="text-center font-bold text-xl md:text-2xl text-navy-custom dark:text-white uppercase tracking-wider bg-white dark:bg-slate-800 p-8 rounded-2xl border border-primary/20 shadow-sm font-serif italic text-primary">
+                            "We don't just measure growth; we measure the rise of a nation."
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Success Story Feature (The "Who") -->
+                <section class="py-0 flex flex-col md:flex-row bg-navy-custom text-white overflow-hidden min-h-[600px]">
+                    <div class="md:w-1/2 min-h-[400px] md:min-h-[600px] bg-cover bg-center"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNVvE8X1dgb14mefyWQ-Wf-d3MRpHWQQxYZ5GA8kc3XGKf668SMHFbcTudVDm0aq6euR2qJU8ilhgJ7wuYhaRoOvtpYJYMo_ijgtYQrg59hB0SMOxCznOCIR6udAawju9jvExAY9-ojPnIot2FTgLfnHV8mVR7Rpz8LD2sUIO37JVGh_GB5Rrieic-I3PXiiq0lLzD71EGwmkkNGXwL9QXSLEEIgENyKtQPWfmcLn7Q8uosfoH2aA9qL4C7rnzsbVUXFW7HLVpcLY7');">
+                        <!-- High quality image of an athlete in rural setting -->
+                        <div class="w-full h-full bg-black/30 backdrop-blur-[2px]"></div>
                     </div>
                     <div
-                        class="flex gap-8 text-[11px] font-black uppercase tracking-widest text-navy-custom/60 dark:text-slate-400">
-                        <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
-                        <a class="hover:text-primary transition-colors" href="#">Terms of Impact</a>
-                        <a class="hover:text-primary transition-colors" href="#">Support Rural Athletes</a>
+                        class="md:w-1/2 p-12 md:p-24 flex flex-col justify-center bg-slate-900 border-l-8 border-primary relative">
+                        <span
+                            class="material-symbols-outlined text-primary text-6xl absolute top-12 md:top-24 right-12 opacity-20">format_quote</span>
+                        <h3 class="text-primary font-black text-sm uppercase tracking-[0.4em] mb-4">The Human Face of
+                            Your Impact</h3>
+                        <h2
+                            class="text-4xl md:text-6xl font-black mb-8 tracking-tighter uppercase leading-tight text-white">
+                            MEET AKASH.
+                        </h2>
+                        <p class="text-slate-300 text-lg md:text-xl font-medium leading-relaxed mb-8 max-w-lg">
+                            "Meet Akash from a small village in Vidarbha. Supported by our community of donors, he moved
+                            from running barefoot to winning State Gold. His education is now secure, and his village
+                            has a hero."
+                        </p>
+                        <p
+                            class="text-xl md:text-2xl font-bold italic text-white border-l-4 border-primary pl-6 py-2 shadow-sm font-serif">
+                            "One medal in a village inspires a thousand students to stay in school."
+                        </p>
+                        <div class="mt-12">
+                            <a href="blog.html"
+                                class="inline-flex items-center gap-3 text-primary font-black uppercase tracking-[0.2em] hover:text-white transition-colors bg-white/5 px-6 py-3 rounded-full hover:bg-white/10 active:scale-95 border border-white/10">
+                                Read more stories <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
                     </div>
+                </section>
+
+                <!-- Trust & Transparency (The Commitment) -->
+                <section
+                    class="py-32 px-6 md:px-20 bg-white dark:bg-background-dark text-center shadow-[inset_0_20px_50px_rgba(0,0,0,0.02)]">
+                    <div class="max-w-[900px] mx-auto">
+                        <div
+                            class="bg-primary/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 animate-pulse">
+                            <span class="material-symbols-outlined text-6xl text-primary">gavel</span>
+                        </div>
+                        <h2
+                            class="text-navy-custom dark:text-white text-4xl md:text-6xl font-black mb-8 tracking-tighter uppercase">
+                            TRANSPARENT. ACCOUNTABLE. IMPACTDRIVEN.
+                        </h2>
+                        <p
+                            class="text-navy-custom/70 dark:text-slate-400 text-lg md:text-2xl font-medium leading-relaxed mb-12">
+                            We provide our partners and donors with end-to-end transparency—from 80G Tax Benefits /
+                            "Impact Verified" certificates to real-time field photography and detailed impact
+                            assessments.
+                        </p>
+                        <div
+                            class="inline-block py-5 px-10 rounded-full bg-primary text-white shadow-[0_0_30px_rgba(239,68,68,0.4)] hover:scale-105 transition-transform cursor-default">
+                            <p class="font-black uppercase tracking-widest text-sm md:text-lg">
+                                "Integrity in our process; Excellence on the field."
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Final Call Footer -->
+            <footer
+                class="py-24 px-6 md:px-20 border-t border-slate-200 dark:border-slate-800 bg-navy-custom dark:bg-slate-900 text-center text-white relative overflow-hidden">
+                <!-- Background Pattern -->
+                <div class="absolute inset-0 opacity-5"
+                    style="background-image: radial-gradient(circle at center, white 1px, transparent 1px); background-size: 20px 20px;">
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center gap-10 max-w-[900px] mx-auto">
+                    <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-2 text-glow">
+                        The game is just beginning.<br />Let’s play for India.
+                    </h2>
+                    <p class="text-primary font-bold text-2xl md:text-3xl italic font-serif mb-6 DropShadow">
+                        "Your belief. Their life-changing opportunity."
+                    </p>
+
+                    <a href="donation.html"
+                        class="flex items-center justify-center rounded-full h-16 py-4 px-12 bg-white text-navy-custom text-base font-black uppercase tracking-[0.2em] shadow-xl hover:scale-105 active:scale-95 transition-all mb-10">
+                        Join Us Today
+                    </a>
+
+                    <div class="h-px w-full bg-white/20 mb-4"></div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary font-bold text-3xl">bolt</span>
+                        <span class="font-black uppercase tracking-tighter text-2xl text-white">FLEXON SPORTS
+                            FOUNDATION</span>
+                    </div>
+
+                    <nav
+                        class="flex flex-wrap justify-center gap-6 md:gap-10 text-[12px] font-black uppercase tracking-widest text-slate-400">
+                        <a class="hover:text-primary transition-colors" href="home.html">Home</a>
+                        <a class="hover:text-primary transition-colors" href="flexonlegecy.html">About Us</a>
+                        <a class="hover:text-primary transition-colors" href="services.html">Services</a>
+                        <a class="hover:text-primary transition-colors" href="achivements.html">Achievements</a>
+                        <a class="hover:text-primary transition-colors" href="events.html">Events</a>
+                        <a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
+                        <a class="hover:text-primary transition-colors" href="donation.html">Support</a>
+                    </nav>
+
                     <p
-                        class="text-navy-custom/40 dark:text-slate-500 text-[10px] font-black uppercase tracking-[0.3em] max-w-xl">
-                        © 2024 FLEXON SPORTS ACADEMY. EMPOWERING THE GRIT OF RURAL INDIA. CHAMPIONING THE PODIUM DREAMS
-                        OF EVERY VILLAGE.
+                        class="text-slate-500 text-[10px] font-black uppercase tracking-[0.3em] max-w-2xl mt-4 leading-relaxed">
+                        © 2026 FLEXON SPORTS FOUNDATION. EMPOWERING THE GRIT OF RURAL INDIA. CHAMPIONING THE PODIUM
+                        DREAMS OF EVERY VILLAGE.
                     </p>
                 </div>
             </footer>
         </div>
     </div>
-
 </body>
 
 </html>
